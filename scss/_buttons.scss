@@ -1,0 +1,64 @@
+.simple-btn {
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #666;
+  background: #f4f4f4;
+  border: 0;
+  padding: 8px 12px;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  -ms-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+
+  &:hover, &:focus, &:active {
+    background: #eee;
+    text-decoration: none;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #555;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    background: $white;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+}
+
+.orange-btn {
+  @extend .simple-btn;
+  background: $orange;
+  color: $white !important;
+  border: 0;
+
+  &:hover, &:focus, &:active {
+    background: darken($orange, 10%);
+    color: $white;
+  }
+
+  &:disabled {
+    background: $orange !important;
+    opacity: 0.5;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.btn-lg {
+  padding: 16px 22px;
+  font-size: 16px;
+}

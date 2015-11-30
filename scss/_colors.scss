@@ -1,0 +1,64 @@
+@mixin color($color){
+  color: $color;
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color;
+    text-decoration: none;
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    border-bottom: 1px dotted $color;
+    color: $color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+}
+
+.white {
+  @include color($white);
+}
+
+.black {
+  @include color($black);
+}
+
+.grey {
+  @include color($grey);
+}
+
+.light-grey {
+  @include color($light-grey);
+}
+
+.dark-grey {
+  @include color($dark-grey);
+}
+
+.orange {
+  @include color($orange);
+}
+
+.green {
+  @include color($green);
+}
+
+.dark-green {
+  @include color($dark-green);
+}
+
+.red {
+  @include color($red);
+}
+
+.beige {
+  @include color($beige);
+}

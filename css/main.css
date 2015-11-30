@@ -1,0 +1,247 @@
+.alert {
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border: 0; }
+
+.alert-danger {
+  background-color: #f5e1e1; }
+
+.alert-success {
+  background-color: #e4f1da; }
+
+.alert-warning {
+  background-color: #fff4e1; }
+
+.simple-btn, .orange-btn {
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #666;
+  background: #f4f4f4;
+  border: 0;
+  padding: 8px 12px;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  -ms-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out; }
+  .simple-btn:hover, .orange-btn:hover, .simple-btn:focus, .orange-btn:focus, .simple-btn:active, .orange-btn:active {
+    background: #eee;
+    text-decoration: none;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #555; }
+  .simple-btn:disabled, .orange-btn:disabled {
+    opacity: 0.6;
+    background: #fff; }
+    .simple-btn:disabled:hover, .orange-btn:disabled:hover {
+      cursor: default; }
+  .simple-btn .fa, .orange-btn .fa {
+    margin-right: 5px; }
+
+.orange-btn {
+  background: #e86240;
+  color: #fff !important;
+  border: 0; }
+  .orange-btn:hover, .orange-btn:focus, .orange-btn:active {
+    background: #db411a;
+    color: #fff; }
+  .orange-btn:disabled {
+    background: #e86240 !important;
+    opacity: 0.5; }
+    .orange-btn:disabled:hover {
+      cursor: default; }
+
+.btn-lg {
+  padding: 16px 22px;
+  font-size: 16px; }
+
+.white {
+  color: #fff; }
+  .white, .white:hover, .white:focus, .white:active {
+    color: #fff;
+    text-decoration: none; }
+  .white a,
+  .white a:hover,
+  .white a:focus,
+  .white a:active {
+    border-bottom: 1px dotted #fff;
+    color: #fff;
+    text-decoration: none; }
+  .white a:hover {
+    cursor: pointer; }
+
+.black {
+  color: #333; }
+  .black, .black:hover, .black:focus, .black:active {
+    color: #333;
+    text-decoration: none; }
+  .black a,
+  .black a:hover,
+  .black a:focus,
+  .black a:active {
+    border-bottom: 1px dotted #333;
+    color: #333;
+    text-decoration: none; }
+  .black a:hover {
+    cursor: pointer; }
+
+.grey {
+  color: #888; }
+  .grey, .grey:hover, .grey:focus, .grey:active {
+    color: #888;
+    text-decoration: none; }
+  .grey a,
+  .grey a:hover,
+  .grey a:focus,
+  .grey a:active {
+    border-bottom: 1px dotted #888;
+    color: #888;
+    text-decoration: none; }
+  .grey a:hover {
+    cursor: pointer; }
+
+.light-grey {
+  color: #aaa; }
+  .light-grey, .light-grey:hover, .light-grey:focus, .light-grey:active {
+    color: #aaa;
+    text-decoration: none; }
+  .light-grey a,
+  .light-grey a:hover,
+  .light-grey a:focus,
+  .light-grey a:active {
+    border-bottom: 1px dotted #aaa;
+    color: #aaa;
+    text-decoration: none; }
+  .light-grey a:hover {
+    cursor: pointer; }
+
+.dark-grey {
+  color: #666; }
+  .dark-grey, .dark-grey:hover, .dark-grey:focus, .dark-grey:active {
+    color: #666;
+    text-decoration: none; }
+  .dark-grey a,
+  .dark-grey a:hover,
+  .dark-grey a:focus,
+  .dark-grey a:active {
+    border-bottom: 1px dotted #666;
+    color: #666;
+    text-decoration: none; }
+  .dark-grey a:hover {
+    cursor: pointer; }
+
+.orange {
+  color: #e86240; }
+  .orange, .orange:hover, .orange:focus, .orange:active {
+    color: #e86240;
+    text-decoration: none; }
+  .orange a,
+  .orange a:hover,
+  .orange a:focus,
+  .orange a:active {
+    border-bottom: 1px dotted #e86240;
+    color: #e86240;
+    text-decoration: none; }
+  .orange a:hover {
+    cursor: pointer; }
+
+.green {
+  color: #60AD1D; }
+  .green, .green:hover, .green:focus, .green:active {
+    color: #60AD1D;
+    text-decoration: none; }
+  .green a,
+  .green a:hover,
+  .green a:focus,
+  .green a:active {
+    border-bottom: 1px dotted #60AD1D;
+    color: #60AD1D;
+    text-decoration: none; }
+  .green a:hover {
+    cursor: pointer; }
+
+.dark-green, .alert-success {
+  color: #427c11; }
+  .dark-green, .alert-success, .dark-green:hover, .alert-success:hover, .dark-green:focus, .alert-success:focus, .dark-green:active, .alert-success:active {
+    color: #427c11;
+    text-decoration: none; }
+  .dark-green a, .alert-success a,
+  .dark-green a:hover,
+  .alert-success a:hover,
+  .dark-green a:focus,
+  .alert-success a:focus,
+  .dark-green a:active,
+  .alert-success a:active {
+    border-bottom: 1px dotted #427c11;
+    color: #427c11;
+    text-decoration: none; }
+  .dark-green a:hover, .alert-success a:hover {
+    cursor: pointer; }
+
+.red, .alert-danger {
+  color: #d63c3c; }
+  .red, .alert-danger, .red:hover, .alert-danger:hover, .red:focus, .alert-danger:focus, .red:active, .alert-danger:active {
+    color: #d63c3c;
+    text-decoration: none; }
+  .red a, .alert-danger a,
+  .red a:hover,
+  .alert-danger a:hover,
+  .red a:focus,
+  .alert-danger a:focus,
+  .red a:active,
+  .alert-danger a:active {
+    border-bottom: 1px dotted #d63c3c;
+    color: #d63c3c;
+    text-decoration: none; }
+  .red a:hover, .alert-danger a:hover {
+    cursor: pointer; }
+
+.beige, .alert-warning {
+  color: #8b6914; }
+  .beige, .alert-warning, .beige:hover, .alert-warning:hover, .beige:focus, .alert-warning:focus, .beige:active, .alert-warning:active {
+    color: #8b6914;
+    text-decoration: none; }
+  .beige a, .alert-warning a,
+  .beige a:hover,
+  .alert-warning a:hover,
+  .beige a:focus,
+  .alert-warning a:focus,
+  .beige a:active,
+  .alert-warning a:active {
+    border-bottom: 1px dotted #8b6914;
+    color: #8b6914;
+    text-decoration: none; }
+  .beige a:hover, .alert-warning a:hover {
+    cursor: pointer; }
+
+input[type=text],
+input[type=email],
+input[type=password],
+select,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
+  input[type=text]:focus,
+  input[type=email]:focus,
+  input[type=password]:focus,
+  select:focus,
+  textarea:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none !important;
+    border: 1px solid #e86240 !important; }
+
+label {
+  font-size: 14px;
+  color: #888;
+  font-weight: 500; }
+
+/*# sourceMappingURL=main.css.map */

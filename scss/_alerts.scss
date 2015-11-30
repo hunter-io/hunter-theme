@@ -1,0 +1,22 @@
+.alert {
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+.alert-danger {
+  @extend .red;
+  background-color: $background-red;
+}
+
+.alert-success {
+  @extend .dark-green;
+  background-color: $background-green;
+}
+
+.alert-warning {
+  @extend .beige;
+  background-color: $background-beige;
+}
