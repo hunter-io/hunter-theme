@@ -47,6 +47,10 @@
   @include color($orange);
 }
 
+.dark-orange {
+  @include color($dark-orange);
+}
+
 .green {
   @include color($green);
 }

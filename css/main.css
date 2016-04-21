@@ -23,7 +23,7 @@
   background: #f4f4f4;
   border: 0;
   padding: 8px 12px;
-  font-size: 14px;
+  text-decoration: none;
   -webkit-transition: background-color 200ms ease-in-out;
   -moz-transition: background-color 200ms ease-in-out;
   -o-transition: background-color 200ms ease-in-out;
@@ -148,6 +148,21 @@
     color: #e86240;
     text-decoration: none; }
   .orange a:hover {
+    cursor: pointer; }
+
+.dark-orange {
+  color: #D45535; }
+  .dark-orange, .dark-orange:hover, .dark-orange:focus, .dark-orange:active {
+    color: #D45535;
+    text-decoration: none; }
+  .dark-orange a,
+  .dark-orange a:hover,
+  .dark-orange a:focus,
+  .dark-orange a:active {
+    border-bottom: 1px dotted #D45535;
+    color: #D45535;
+    text-decoration: none; }
+  .dark-orange a:hover {
     cursor: pointer; }
 
 .green {
