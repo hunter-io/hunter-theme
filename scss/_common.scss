@@ -1,0 +1,40 @@
+// Font
+//
+
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Blue links
+//
+
+.blue-link {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: 1px solid lighten($blue, 30%);
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $blue;
+    text-decoration: none;
+    border-bottom: 1px solid lighten($blue, 20%);
+    cursor: pointer;
+  }
+}
+
+
+// Selection
+//
+
+::selection {
+  background: lighten($black, 5%);
+  color: $white;
+}

@@ -1,60 +1,69 @@
-.simple-btn {
+.white-btn {
   display: inline-block;
   text-align: center;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   color: #666;
-  background: #f4f4f4;
+  background: darken($white, 6%);
   border: 0;
   padding: 8px 12px;
-  text-decoration: none;
-  -webkit-transition: background-color 200ms ease-in-out;
-  -moz-transition: background-color 200ms ease-in-out;
-  -o-transition: background-color 200ms ease-in-out;
-  -ms-transition: background-color 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out;
+  font-size: 14px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  font-weight: 700;
 
   &:hover, &:focus, &:active {
-    background: #eee;
+    background: darken($white, 10%);
     text-decoration: none;
     outline: 0 !important;
     cursor: pointer;
     color: #555;
   }
 
+  &:focus, &:active {
+    background: darken($white, 15%);
+  }
+
   &:disabled {
-    opacity: 0.6;
-    background: $white;
+    background: darken($white, 3%);
 
     &:hover {
       cursor: default;
     }
-  }
-
-  .fa {
-    margin-right: 5px;
   }
 }
 
 .orange-btn {
-  @extend .simple-btn;
+  @extend .white-btn;
   background: $orange;
-  color: $white !important;
+  color: #fff !important;
   border: 0;
 
   &:hover, &:focus, &:active {
     background: darken($orange, 10%);
-    color: $white;
+    color: #fff;
   }
 
   &:disabled {
-    background: $orange !important;
-    opacity: 0.5;
+    background-color: lighten($orange, 10%);
+  }
+}
 
-    &:hover {
-      cursor: default;
-    }
+.black-btn {
+  @extend .white-btn;
+  background: $black;
+  color: #fafafa !important;
+  border: 1px solid #fafafa;
+
+  &:hover, &:focus, &:active {
+    background: darken($black, 5%);
+  }
+
+  &:disabled {
+    background: lighten($black, 5%);
   }
 }
 

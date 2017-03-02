@@ -13,48 +13,53 @@
 .alert-warning {
   background-color: #fff4e1; }
 
-.simple-btn, .orange-btn {
+.white-btn, .orange-btn, .black-btn {
   display: inline-block;
   text-align: center;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   color: #666;
-  background: #f4f4f4;
+  background: #f0f0f0;
   border: 0;
   padding: 8px 12px;
-  text-decoration: none;
-  -webkit-transition: background-color 200ms ease-in-out;
-  -moz-transition: background-color 200ms ease-in-out;
-  -o-transition: background-color 200ms ease-in-out;
-  -ms-transition: background-color 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out; }
-  .simple-btn:hover, .orange-btn:hover, .simple-btn:focus, .orange-btn:focus, .simple-btn:active, .orange-btn:active {
-    background: #eee;
+  font-size: 14px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  font-weight: 700; }
+  .white-btn:hover, .orange-btn:hover, .black-btn:hover, .white-btn:focus, .orange-btn:focus, .black-btn:focus, .white-btn:active, .orange-btn:active, .black-btn:active {
+    background: #e6e6e6;
     text-decoration: none;
     outline: 0 !important;
     cursor: pointer;
     color: #555; }
-  .simple-btn:disabled, .orange-btn:disabled {
-    opacity: 0.6;
-    background: #fff; }
-    .simple-btn:disabled:hover, .orange-btn:disabled:hover {
+  .white-btn:focus, .orange-btn:focus, .black-btn:focus, .white-btn:active, .orange-btn:active, .black-btn:active {
+    background: #d9d9d9; }
+  .white-btn:disabled, .orange-btn:disabled, .black-btn:disabled {
+    background: #f7f7f7; }
+    .white-btn:disabled:hover, .orange-btn:disabled:hover, .black-btn:disabled:hover {
       cursor: default; }
-  .simple-btn .fa, .orange-btn .fa {
-    margin-right: 5px; }
 
 .orange-btn {
-  background: #e86240;
+  background: #ff5722;
   color: #fff !important;
   border: 0; }
   .orange-btn:hover, .orange-btn:focus, .orange-btn:active {
-    background: #db411a;
+    background: #ee3900;
     color: #fff; }
   .orange-btn:disabled {
-    background: #e86240 !important;
-    opacity: 0.5; }
-    .orange-btn:disabled:hover {
-      cursor: default; }
+    background-color: #ff7e55; }
+
+.black-btn {
+  background: #333;
+  color: #fafafa !important;
+  border: 1px solid #fafafa; }
+  .black-btn:hover, .black-btn:focus, .black-btn:active {
+    background: #262626; }
+  .black-btn:disabled {
+    background: #404040; }
 
 .btn-lg {
   padding: 16px 22px;
@@ -105,19 +110,22 @@
   .grey a:hover {
     cursor: pointer; }
 
-.light-grey {
-  color: #aaa; }
-  .light-grey, .light-grey:hover, .light-grey:focus, .light-grey:active {
-    color: #aaa;
+.light-grey, .help-block {
+  color: #9a9a9a; }
+  .light-grey, .help-block, .light-grey:hover, .help-block:hover, .light-grey:focus, .help-block:focus, .light-grey:active, .help-block:active {
+    color: #9a9a9a;
     text-decoration: none; }
-  .light-grey a,
+  .light-grey a, .help-block a,
   .light-grey a:hover,
+  .help-block a:hover,
   .light-grey a:focus,
-  .light-grey a:active {
-    border-bottom: 1px dotted #aaa;
-    color: #aaa;
+  .help-block a:focus,
+  .light-grey a:active,
+  .help-block a:active {
+    border-bottom: 1px dotted #9a9a9a;
+    color: #9a9a9a;
     text-decoration: none; }
-  .light-grey a:hover {
+  .light-grey a:hover, .help-block a:hover {
     cursor: pointer; }
 
 .dark-grey {
@@ -136,46 +144,31 @@
     cursor: pointer; }
 
 .orange {
-  color: #e86240; }
+  color: #ff5722; }
   .orange, .orange:hover, .orange:focus, .orange:active {
-    color: #e86240;
+    color: #ff5722;
     text-decoration: none; }
   .orange a,
   .orange a:hover,
   .orange a:focus,
   .orange a:active {
-    border-bottom: 1px dotted #e86240;
-    color: #e86240;
+    border-bottom: 1px dotted #ff5722;
+    color: #ff5722;
     text-decoration: none; }
   .orange a:hover {
     cursor: pointer; }
 
-.dark-orange {
-  color: #D45535; }
-  .dark-orange, .dark-orange:hover, .dark-orange:focus, .dark-orange:active {
-    color: #D45535;
-    text-decoration: none; }
-  .dark-orange a,
-  .dark-orange a:hover,
-  .dark-orange a:focus,
-  .dark-orange a:active {
-    border-bottom: 1px dotted #D45535;
-    color: #D45535;
-    text-decoration: none; }
-  .dark-orange a:hover {
-    cursor: pointer; }
-
 .green {
-  color: #60AD1D; }
+  color: #60ad1d; }
   .green, .green:hover, .green:focus, .green:active {
-    color: #60AD1D;
+    color: #60ad1d;
     text-decoration: none; }
   .green a,
   .green a:hover,
   .green a:focus,
   .green a:active {
-    border-bottom: 1px dotted #60AD1D;
-    color: #60AD1D;
+    border-bottom: 1px dotted #60ad1d;
+    color: #60ad1d;
     text-decoration: none; }
   .green a:hover {
     cursor: pointer; }
@@ -237,25 +230,60 @@
 input[type=text],
 input[type=email],
 input[type=password],
+input[type=number],
 select,
 textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
   -moz-border-radius: 3px;
-  -webkit-border-radius: 3px; }
-  input[type=text]:focus,
+  -webkit-border-radius: 3px;
+  background-color: #fcfcfc;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out; }
+  input[type=text]:hover,
+  input[type=email]:hover,
+  input[type=password]:hover,
+  input[type=number]:hover,
+  select:hover,
+  textarea:hover {
+    border: 1px solid #c2c2c2; }
+  input[type=text]:focus, input[type=text]:active,
   input[type=email]:focus,
+  input[type=email]:active,
   input[type=password]:focus,
+  input[type=password]:active,
+  input[type=number]:focus,
+  input[type=number]:active,
   select:focus,
-  textarea:focus {
+  select:active,
+  textarea:focus,
+  textarea:active {
+    background-color: #fff;
     outline: 0;
     -webkit-box-shadow: none;
-    box-shadow: none !important;
-    border: 1px solid #e86240 !important; }
+    box-shadow: none;
+    border: 1px solid #ff5722; }
+
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder {
+  color: #888; }
+
+input[type=text]:focus::-webkit-input-placeholder,
+input[type=email]:focus::-webkit-input-placeholder,
+input[type=password]:focus::-webkit-input-placeholder {
+  color: #b9b9b9; }
 
 label {
-  font-size: 14px;
-  color: #888;
-  font-weight: 500; }
+  font-size: 15px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 6px; }
+
+.help-block {
+  font-size: 13px;
+  margin-top: 8px; }
 
 /*# sourceMappingURL=main.css.map */

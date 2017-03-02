@@ -1,23 +1,54 @@
 input[type=text],
 input[type=email],
 input[type=password],
+input[type=number],
 select,
 textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  background-color: darken($white, 1%);
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
 
-  &:focus {
+  &:hover {
+    border: 1px solid #c2c2c2;
+  }
+
+  &:focus,
+  &:active {
+    background-color: #fff;
     outline: 0;
     -webkit-box-shadow: none;
-    box-shadow: none !important;
-    border: 1px solid $orange !important;
+    box-shadow: none;
+    border: 1px solid $orange;
   }
 }
 
-label {
-  font-size: 14px;
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder {
   color: $grey;
-  font-weight: 500;
+}
+
+input[type=text]:focus::-webkit-input-placeholder,
+input[type=email]:focus::-webkit-input-placeholder,
+input[type=password]:focus::-webkit-input-placeholder {
+  color: lighten($light-grey, 12%);
+}
+
+label {
+  font-size: 15px;
+  color: $black;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.help-block {
+  @extend .light-grey;
+  font-size: 13px;
+  margin-top: 8px;
 }
