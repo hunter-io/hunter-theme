@@ -1,3 +1,26 @@
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.blue-link {
+  color: #428bca;
+  text-decoration: none;
+  border-bottom: 1px solid #b9d4ec;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out; }
+  .blue-link:hover, .blue-link:active, .blue-link:focus {
+    color: #428bca;
+    text-decoration: none;
+    border-bottom: 1px solid #92bce0;
+    cursor: pointer; }
+
+::selection {
+  background: #404040;
+  color: #fff; }
+
 .alert {
   width: 100%;
   padding: 20px;
