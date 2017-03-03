@@ -21,6 +21,41 @@ body {
   background: #404040;
   color: #fff; }
 
+.board-box {
+  border: solid #eaeaea;
+  border-width: 1px 1px 2px 1px;
+  padding: 30px 28px 28px 28px;
+  background-color: #fff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 15px;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out; }
+  .board-box:hover {
+    border: solid #e5e5e5;
+    border-width: 1px 1px 2px 1px; }
+  .board-box h1, .board-box h2 {
+    font-size: 22px;
+    margin: 0 0 30px;
+    font-weight: 700; }
+    .board-box h1 .subtitle, .board-box h2 .subtitle {
+      color: #888;
+      margin-top: 6px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 500; }
+  .board-box h1 {
+    font-size: 28px; }
+  .board-box h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px; }
+
 .alert {
   width: 100%;
   padding: 20px;
