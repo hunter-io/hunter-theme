@@ -285,6 +285,21 @@ body {
   .beige a:hover, .alert-warning a:hover {
     cursor: pointer; }
 
+.dark-orange {
+  color: #d45535; }
+  .dark-orange, .dark-orange:hover, .dark-orange:focus, .dark-orange:active {
+    color: #d45535;
+    text-decoration: none; }
+  .dark-orange a,
+  .dark-orange a:hover,
+  .dark-orange a:focus,
+  .dark-orange a:active {
+    border-bottom: 1px dotted #d45535;
+    color: #d45535;
+    text-decoration: none; }
+  .dark-orange a:hover {
+    cursor: pointer; }
+
 input[type=text],
 input[type=email],
 input[type=password],

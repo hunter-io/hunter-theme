@@ -62,3 +62,7 @@
 .beige {
   @include color($beige);
 }
+
+.dark-orange {
+  @include color($dark-orange);
+}
