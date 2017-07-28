@@ -15,24 +15,34 @@
   transition: all 200ms ease-in-out;
   font-weight: 700;
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:active,
+  &:focus {
     background: darken($white, 10%);
     text-decoration: none;
-    outline: 0 !important;
     cursor: pointer;
     color: #555;
   }
 
-  &:focus, &:active {
+  &:active {
     background: darken($white, 15%);
+  }
+
+  &:focus {
+    outline: 0 !important;
   }
 
   &:disabled {
     background: darken($white, 3%);
+    color: #999;
 
     &:hover {
       cursor: default;
     }
+  }
+
+  .fa {
+    margin-right: 5px;
   }
 }
 
@@ -50,9 +60,15 @@
   &:disabled {
     background-color: lighten($orange, 10%);
   }
+
+  .cta-precision {
+    color: lighten($orange, 30%);
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
 }
 
-.black-btn {
+.dark-btn {
   @extend .white-btn;
   background: $black;
   color: #fafafa !important;

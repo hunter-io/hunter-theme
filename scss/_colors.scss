@@ -21,6 +21,10 @@
   a:hover {
     cursor: pointer;
   }
+
+  path {
+    fill: $color;
+  }
 }
 
 .white {
