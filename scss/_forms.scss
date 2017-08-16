@@ -16,6 +16,8 @@ textarea {
   -ms-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
   height: 38px;
+  font-size: 14px;
+  line-height: 25px;
 
   &:hover {
     border: 1px solid #c2c2c2;
@@ -28,6 +30,12 @@ textarea {
     -webkit-box-shadow: none;
     box-shadow: none;
     border: 1px solid $orange !important;
+  }
+
+  &.input-lg {
+    height: 46px;
+    padding: 10px 12px;
+    font-size: 16px;
   }
 }
 
@@ -54,10 +62,4 @@ label {
   @extend .light-grey;
   font-size: 13px;
   margin-top: 8px;
-}
-
-.input-lg {
-  height: 46px;
-  padding: 22px 12px;
-  font-size: 16px;
 }

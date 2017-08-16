@@ -14,6 +14,8 @@
   -ms-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   font-weight: 600;
+  height: 38px;
+  line-height: 25px;
 
   &:hover,
   &:active,
@@ -43,6 +45,12 @@
 
   .fa {
     margin-right: 5px;
+  }
+
+  &.btn-lg {
+    padding: 10px 20px;
+    font-size: 16px;
+    height: 56px;
   }
 }
 
@@ -81,9 +89,4 @@
   &:disabled {
     background: lighten($black, 5%);
   }
-}
-
-.btn-lg {
-  padding: 16px 22px;
-  font-size: 16px;
 }
