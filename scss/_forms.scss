@@ -5,7 +5,7 @@ input[type=number],
 input[type=tel],
 select,
 textarea {
-  border: 1px solid darken($border-grey, 10%) !important;
+  border: 1px solid darken($border-grey, 10%);
   box-shadow: none !important;
   border-radius: 3px;
   -moz-border-radius: 3px;
@@ -15,6 +15,7 @@ textarea {
   -moz-transition: all 100ms ease-in-out;
   -ms-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
+  height: 38px;
 
   &:hover {
     border: 1px solid #c2c2c2;
@@ -33,24 +34,30 @@ textarea {
 input[type=text]::-webkit-input-placeholder,
 input[type=email]::-webkit-input-placeholder,
 input[type=password]::-webkit-input-placeholder {
-  color: $grey;
+  color: lighten($light-grey, 15%);;
 }
 
 input[type=text]:focus::-webkit-input-placeholder,
 input[type=email]:focus::-webkit-input-placeholder,
 input[type=password]:focus::-webkit-input-placeholder {
-  color: lighten($light-grey, 12%);
+  color: lighten($light-grey, 22%);
 }
 
 label {
-  font-size: 15px;
+  font-size: 14px;
   color: $black;
-  font-weight: 700;
-  margin-bottom: 6px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .help-block {
   @extend .light-grey;
   font-size: 13px;
   margin-top: 8px;
+}
+
+.input-lg {
+  height: 46px;
+  padding: 22px 12px;
+  font-size: 16px;
 }

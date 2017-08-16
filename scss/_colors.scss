@@ -13,12 +13,17 @@
   a:hover,
   a:focus,
   a:active {
-    border-bottom: 1px dotted $color;
+    border-bottom: 1px solid lighten($color, 35%);
     color: $color;
     text-decoration: none;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
   }
 
   a:hover {
+    border-color: lighten($color, 25%);
     cursor: pointer;
   }
 
