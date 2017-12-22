@@ -15,17 +15,17 @@ body {
   color: $blue;
   text-decoration: none;
   border-bottom: 1px solid lighten($blue, 30%);
-  -webkit-transition: all 100ms ease-in-out;
-  -moz-transition: all 100ms ease-in-out;
-  -ms-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  transition: all 250ms ease;
 
   &:hover,
   &:active,
   &:focus {
     color: $blue;
     text-decoration: none;
-    border-bottom: 1px solid lighten($blue, 20%);
+    border-bottom: 1px solid lighten($blue, 15%);
     cursor: pointer;
   }
 }

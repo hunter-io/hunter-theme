@@ -11,17 +11,14 @@ textarea {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   background-color: darken($white, 1%);
-  -webkit-transition: all 100ms ease-in-out;
-  -moz-transition: all 100ms ease-in-out;
-  -ms-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
-  height: 38px;
-  font-size: 14px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  transition: all 250ms ease;
+  height: 36px;
+  font-size: 13px;
   line-height: 25px;
-
-  &:hover {
-    border: 1px solid #c2c2c2;
-  }
+  padding: 6px 8px;
 
   &:focus,
   &:active {
@@ -35,8 +32,12 @@ textarea {
   &.input-lg {
     height: 46px;
     padding: 10px 12px;
-    font-size: 16px;
+    font-size: 15px;
   }
+}
+
+select {
+  background-color: $white;
 }
 
 input[type=text]::-webkit-input-placeholder,
@@ -52,10 +53,10 @@ input[type=password]:focus::-webkit-input-placeholder {
 }
 
 label {
-  font-size: 14px;
+  font-size: 13px;
   color: $black;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .help-block {

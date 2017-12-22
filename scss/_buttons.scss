@@ -4,30 +4,33 @@
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  color: darken($grey, 10%);
-  background: darken($white, 7%);
-  border: 0;
-  padding: 6px 12px;
+  color: darken($grey, 5%);
+  background: $white;
+  border: 1px solid darken($border-grey, 5%);
+  padding: 5px 12px;
   font-size: 13px;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: background-color 250ms ease;
+  -moz-transition: background-color 250ms ease;
+  -ms-transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
   font-weight: 600;
-  height: 38px;
+  height: 36px;
   line-height: 25px;
+  vertical-align: baseline;
 
   &:hover,
   &:active,
   &:focus {
-    background: darken($white, 10%);
     text-decoration: none;
     cursor: pointer;
-    color: #555;
+    background: darken($white, 2%);
+    border-color: darken($border-grey, 5%);
+    color: darken($grey, 10%);
   }
 
   &:active {
-    background: darken($white, 15%);
+    background: darken($white, 5%);
+    box-shadow: none;
   }
 
   &:focus {
@@ -35,11 +38,11 @@
   }
 
   &:disabled {
-    background: darken($white, 3%);
-    color: #999;
+    background: $white;
+    color: darken($grey, 5%);
 
     &:hover {
-      cursor: default;
+      cursor: not-allowed;
     }
   }
 
@@ -48,7 +51,7 @@
   }
 
   &.btn-lg {
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 16px;
     height: 56px;
   }
@@ -57,12 +60,13 @@
 .orange-btn {
   @extend .white-btn;
   background: $orange;
-  color: #fff !important;
+  color: $white !important;
   border: 0;
+  height: 34px;
 
   &:hover, &:focus, &:active {
     background: darken($orange, 10%);
-    color: #fff;
+    color: $white;
   }
 
   &:disabled {
