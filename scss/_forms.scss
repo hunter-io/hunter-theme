@@ -2,9 +2,10 @@ input[type=text],
 input[type=email],
 input[type=password],
 input[type=number],
-input[type=tel],
+input[type=phone],
 select,
-textarea {
+textarea,
+#card-field {
   border: 1px solid darken($border-grey, 10%);
   box-shadow: none !important;
   border-radius: 3px;
@@ -21,7 +22,8 @@ textarea {
   padding: 6px 8px;
 
   &:focus,
-  &:active {
+  &:active,
+  &.focus {
     background-color: #fff;
     outline: 0;
     -webkit-box-shadow: none;
@@ -42,13 +44,21 @@ select {
 
 input[type=text]::-webkit-input-placeholder,
 input[type=email]::-webkit-input-placeholder,
-input[type=password]::-webkit-input-placeholder {
-  color: lighten($light-grey, 15%);;
+input[type=password]::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: lighten($light-grey, 15%);
 }
 
 input[type=text]:focus::-webkit-input-placeholder,
 input[type=email]:focus::-webkit-input-placeholder,
-input[type=password]:focus::-webkit-input-placeholder {
+input[type=password]:focus::-webkit-input-placeholder,
+input[type=number]:focus::-webkit-input-placeholder,
+input[type=tel]:focus::-webkit-input-placeholder,
+select:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
   color: lighten($light-grey, 22%);
 }
 

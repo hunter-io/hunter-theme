@@ -55,6 +55,10 @@
   @include color($orange);
 }
 
+.purple {
+  @include color($purple);
+}
+
 .green {
   @include color($green);
 }
@@ -67,10 +71,18 @@
   @include color($red);
 }
 
+.dark-red {
+  @include color($dark-red);
+}
+
 .beige {
   @include color($beige);
 }
 
 .dark-orange {
   @include color($dark-orange);
+}
+
+.blue {
+  @include color($blue);
 }

@@ -1,4 +1,4 @@
-.white-btn {
+.btn-white {
   display: inline-block;
   text-align: center;
   border-radius: 3px;
@@ -29,7 +29,7 @@
   }
 
   &:active {
-    background: darken($white, 5%);
+    background: darken($white, 10%);
     box-shadow: none;
   }
 
@@ -37,40 +37,55 @@
     outline: 0 !important;
   }
 
-  &:disabled {
+  &:disabled,
+  &.disabled {
     background: $white;
-    color: darken($grey, 5%);
+    color: $light-grey;
 
     &:hover {
       cursor: not-allowed;
     }
   }
 
-  .fa {
+  .far, .fas, .fal, .fab {
     margin-right: 5px;
+    font-weight: 500;
+  }
+
+  &.btn-icon {
+    .far, .fas, .fal, .fab {
+      margin-right: 0;
+    }
   }
 
   &.btn-lg {
-    padding: 15px 20px;
-    font-size: 16px;
+    padding: 15px 25px;
+    font-size: 15px;
     height: 56px;
   }
 }
 
-.orange-btn {
-  @extend .white-btn;
+.btn-orange {
+  @extend .btn-white;
   background: $orange;
   color: $white !important;
-  border: 0;
-  height: 34px;
+  border-color: $orange;
 
-  &:hover, &:focus, &:active {
-    background: darken($orange, 10%);
-    color: $white;
+  &:hover,
+  &:focus {
+    background: darken($orange, 5%);
+    border-color: darken($orange, 5%);
   }
 
-  &:disabled {
+  &:active {
+    background: darken($orange, 15%);
+    border-color: darken($orange, 15%);
+  }
+
+  &:disabled,
+  &.disabled  {
     background-color: lighten($orange, 10%);
+    border-color: lighten($orange, 10%);
   }
 
   .cta-precision {
@@ -81,16 +96,44 @@
 }
 
 .dark-btn {
-  @extend .white-btn;
+  @extend .btn-white;
   background: $black;
   color: #fafafa !important;
   border: 1px solid #fafafa;
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus {
     background: darken($black, 5%);
   }
 
-  &:disabled {
+  &:active {
+    background: darken($black, 10%);
+  }
+
+  &:disabled,
+  &.disabled  {
     background: lighten($black, 5%);
+    color: darken($white, 15%) !important;
+  }
+}
+
+.blue-btn {
+  @extend .btn-white;
+  background: darken($blue, 5%);
+  color: $white !important;
+  border: 0;
+  height: 34px;
+
+  &:hover,
+  &:focus {
+    background: darken($blue, 5%);
+  }
+
+  &:active {
+    background: darken($blue, 10%);
+  }
+
+   &:disabled {
+    background-color: lighten($blue, 5%);
   }
 }
